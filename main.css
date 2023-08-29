@@ -1,9 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Sacramento&family=Sniglet&display=swap');
+
 body {
     width: 80%;
     margin: 0 auto;
 }
 * {
     box-sizing: border-box;
+    line-height: 1.6;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sniglet', cursive;
+    text-align: center;
+    /* color: #440381; */
+    color: black;
+}
+p, a, li {
+    font-family: 'Quicksand', sans-serif;
+}
+img {
+    /* border: solid #EC368D 10px; */
 }
 
 /* Skip to main content (adapted from webaim.org source code) */
@@ -25,6 +40,7 @@ body {
 	outline-color: transparent;	
     transition: top .2s ease-in;
 }
+
 /* Header */
 header {
     display: flex;
@@ -34,18 +50,38 @@ header a {
     display: block;
 }
 #sammie_atkins {
-    font-size: 3em;
-    color: black;
+    font-size: 5em;
+    color: #54049F;
+    margin: 10px auto;
     font-weight: bold;
     text-align: center;
 }
-a {
+header > a {
     text-decoration: none;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+}
+header a p {
+    font-family: 'Sacramento', cursive;
 }
 
 /* Headshot */
 #headshot {
-    border-radius: 50%;
+    border-radius: 60%;
+    width: 20%;
+    margin: 0 auto;
+    display: block;
+    padding: 20px;
 }
 
 /* Info & skills section */
+#info_skills {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width: 1366px) {
+    
+}
