@@ -21,6 +21,11 @@ a:focus {
     transform: translateY(0%);
 }
 
+/* Header */
+header a {
+    display: block;
+}
+
 /* Headshot */
 #headshot {
     border-radius: 50%;
