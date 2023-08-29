@@ -1,15 +1,15 @@
 body {
-    margin: 0;
+    width: 80%;
+    margin: 0 auto;
 }
-
 * {
     box-sizing: border-box;
 }
 
+/* Skip to content */
 #skiptocontent {
     height: 50px;
 }
-
 .hidden {
     padding: 8px;
     position: absolute;
@@ -17,7 +17,13 @@ body {
     transform: translateY(-100%);
     transition: transform 0.3s;
 }
-
 a:focus {
     transform: translateY(0%);
 }
+
+/* Headshot */
+#headshot {
+    border-radius: 50%;
+}
+
+/* Info & skills section */
