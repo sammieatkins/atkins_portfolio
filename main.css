@@ -22,8 +22,21 @@ a:focus {
 }
 
 /* Header */
+header {
+    display: flex;
+    flex-direction: column;
+}
 header a {
     display: block;
+}
+#sammie_atkins {
+    font-size: 3em;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+a {
+    text-decoration: none;
 }
 
 /* Headshot */
