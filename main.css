@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Sacramento&family=Sniglet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Sacramento&family=Sniglet&display=swap');
 
-body {
+main {
     width: 80%;
     margin: 0 auto;
 }
 * {
     box-sizing: border-box;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Sniglet', cursive;
     text-align: center;
-    /* color: #440381; */
     color: black;
 }
 p, a, li {
@@ -29,7 +30,7 @@ img {
     left: 0px;
     color: white;
     border-bottom-right-radius: 8px;
-    background: #BF1722;
+    background: #54049F;
     transition: top .5s ease-out;
     z-index: 100;
 }
@@ -42,35 +43,38 @@ img {
 }
 
 /* Header */
-header {
+nav {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #54049F;
 }
-header a {
-    display: block;
-}
-#sammie_atkins {
-    font-size: 5em;
-    color: #54049F;
-    margin: 10px auto;
-    font-weight: bold;
-    text-align: center;
-}
-header > a {
+nav a {
     text-decoration: none;
     margin: 0 auto;
     padding: 10px;
     text-align: center;
     font-size: 1.2em;
+    color: white;
+    font-weight: bold;
+    border-top: solid white 1px;
+    width: 100%;
 }
-header a p {
-    font-family: 'Sacramento', cursive;
+/* header a {
+    display: block;
+} */
+#sammie_atkins {
+    margin: 30px auto;
+    padding: 0 20px;
+    display: block;
+    width: 100%;
 }
+
 
 /* Headshot */
 #headshot {
     border-radius: 60%;
-    width: 20%;
+    width: 80%;
     margin: 0 auto;
     display: block;
     padding: 20px;
@@ -83,5 +87,13 @@ header a p {
 }
 
 @media screen and (min-width: 1366px) {
-    
+    #sammie_atkins {
+        width: 40%;
+    }
+    nav {
+        flex-direction: row;
+    }
+    #headshot {
+        width: 20%;
+    }
 }
