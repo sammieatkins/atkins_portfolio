@@ -6,7 +6,7 @@ main {
 }
 * {
     box-sizing: border-box;
-    line-height: 1.6;
+    line-height: 2;
     margin: 0;
     padding: 0;
 }
@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 p, a, li {
     font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
 }
 img {
     /* border: solid #EC368D 10px; */
@@ -24,9 +25,9 @@ img {
 
 /* Skip to main content (adapted from webaim.org source code) */
 #skiptocontent a {
-    padding: 6px;
+    padding: 10px;
     position: absolute;
-    top: -40px;
+    top: -60px;
     left: 0px;
     color: white;
     border-bottom-right-radius: 8px;
@@ -86,7 +87,7 @@ nav a {
     justify-content: space-evenly;
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
     #sammie_atkins {
         width: 40%;
     }
