@@ -3,6 +3,7 @@
 main {
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 * {
     box-sizing: border-box;
@@ -15,12 +16,12 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     color: black;
 }
-p, a, li {
+p, a {
     font-family: 'Quicksand', sans-serif;
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
 }
-img {
-    /* border: solid #EC368D 10px; */
+li {
+    font-family: 'Quicksand', sans-serif;
 }
 
 /* Skip to main content (adapted from webaim.org source code) */
@@ -49,6 +50,7 @@ nav {
     flex-direction: column;
     justify-content: space-evenly;
     background-color: #54049F;
+    margin-bottom: 15px;
 }
 nav a {
     text-decoration: none;
@@ -61,9 +63,6 @@ nav a {
     border-top: solid white 1px;
     width: 100%;
 }
-/* header a {
-    display: block;
-} */
 #sammie_atkins {
     margin: 30px auto;
     padding: 0 20px;
@@ -71,20 +70,56 @@ nav a {
     width: 100%;
 }
 
-
 /* Headshot */
 #headshot {
     border-radius: 60%;
     width: 80%;
-    margin: 0 auto;
     display: block;
-    padding: 20px;
+    margin: 40px auto 25px;
+}
+
+/* footer */
+footer {
+    background-color: #54049F;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+footer a {
+    color: white;
 }
 
 /* Info & skills section */
 #info_skills {
     display: flex;
     justify-content: space-evenly;
+}
+
+/* Past Projects Page */
+h2 a {
+    color: black;
+    font-family: 'Sniglet', cursive;
+    font-size: 1em;
+}
+.project {
+    background-color: #d9b6f9;
+    border-radius: 20px;
+    padding: 20px 30px 30px 30px;
+    margin: 20px auto;
+}
+.images img {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+.links {
+    width: 90%;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 1000px) {
@@ -96,5 +131,24 @@ nav a {
     }
     #headshot {
         width: 20%;
+    }
+    footer {
+        flex-direction: row;
+    }
+
+    /* Past Projects */
+    .images {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .images img {
+        width: 40%;
+    }
+    .links {
+        width: 30%;
+        margin: 0 auto;
+    }
+    .project {
+        padding: 20px 60px 30px 60px;
     }
 }
