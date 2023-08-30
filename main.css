@@ -81,17 +81,20 @@ nav a {
 /* footer */
 footer {
     background-color: #54049F;
-    color: white;
     font-weight: bold;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    padding: 10px;
+    padding: 10px 0;
     margin-top: 20px;
 }
 footer a {
     color: white;
+    width: 100%;
+}
+footer:nth-child(1) {
+    border-bottom: solid white 1px;
 }
 
 /* Info & skills section */
@@ -107,7 +110,8 @@ h2 a {
     font-size: 1em;
 }
 .project {
-    background-color: #d9b6f9;
+    /* background-color: #d9b6f9; */
+    background-color: #ebd7ff;
     border-radius: 20px;
     padding: 20px 30px 30px 30px;
     margin: 20px auto;
